@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-app
+  template:
+    metadata:
+      labels:
+        app: flask-app
+    spec:
+      containers:
+        - name: flask-container
+          image: docker.io/annt17/flask-app:1.0-25.0518.0210_main_16ff20b
+          ports:
+            - containerPort: 5000
+          env:
+            - name: WELCOME_MSG
+              valueFrom:
+                configMapKeyRef:
+                  name: flask-config
+                  key: WELCOME_MSG
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: flask-secret
+                  key: DB_PASSWORD
