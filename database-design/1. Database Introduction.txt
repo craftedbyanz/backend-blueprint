@@ -1,0 +1,28 @@
+## Database management system
+
+- Là 1 hệ thống phần mềm được sử dụng để quản lý và tổ chức database.
+- Nó cung cấp 1 giao diện giữa database và user giúp user có thể tương tác với database.
+- Mục đích của hệ quản trị database:
+    - Lưu trữ và lấy data
+    - Tổ chức và quản lý data
+    - Kiểm soát và đảm bảo tính bảo mật data
+    - Chia sẻ và truy cập đồng thời (concurrency)
+    - Tính tích hợp và nhất quán data (consistency)
+
+- Các chức năng: CRUD
+
+## Biểu đồ Entity
+- Là biểu đầu thể hiện thông tin về data và các mối quan hệ giữa chúng. Thường được dùng để trực quan hóa database khi thiết kế.
+
+---
+Thực thể - Entity:
+    - Là đối tượng thực tế trong cuộc sống. Ex: Nhà, xe, con người
+    - Được thể hiện bởi hình chữ nhật
+---
+Thuộc tính - Attribute:
+    - Thể hiện các đặc tính cá nhân hóa của thực thể
+    - Được thể hiện bởi hình bầu dục
+---
+Ví dụ:
+    - Entity: Sinh viên
+    - Attribute: Id, tuổi, GPA...
