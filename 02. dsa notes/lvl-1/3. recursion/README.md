@@ -22,3 +22,19 @@
 - Iteration:
   - Tốc độ nhanh hơn
   - Dễ debug
+
+### Example
+
+```
+def factorial(n: int) -> int:
+  # base case
+  if n == 0:
+    return 1
+  
+  # recursion
+  retrun n * factorial(n - 1)
+```
+
+- Base case: stopping condition, allows recursion to terminate
+
+- Recursive: breaks problem into smaller ones
